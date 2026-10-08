@@ -1,0 +1,87 @@
+{
+  "curated_rows": 6073,
+  "curated_sha256": "0e0f603d59b088f509cf9b5abd10f46b94e542bc11d80ddca767d64616d286c3",
+  "distinct_order_id": 6073,
+  "distinct_customers": 2098,
+  "date_min": "2026-03-01",
+  "date_max": "2026-08-31",
+  "distinct_source_dates": 184,
+  "calendar": {
+    "start": "2026-01-01",
+    "end": "2026-12-31",
+    "days": 365
+  },
+  "dims": {
+    "Dim_Customer": 2098,
+    "Dim_Zone": 8,
+    "Dim_TimeSlot": 5,
+    "Dim_DistanceBand": 4,
+    "Dim_Date": 365
+  },
+  "dim_labels": {
+    "zone": [
+      "Bình Thạnh",
+      "Gò Vấp",
+      "Phú Nhuận",
+      "Quận 1",
+      "Quận 3",
+      "Quận 7",
+      "Thủ Đức",
+      "Tân Bình"
+    ],
+    "time_slot": [
+      "Chiều",
+      "Khuya",
+      "Sáng",
+      "Trưa",
+      "Tối"
+    ],
+    "distance_band_normalized": [
+      "2–<4 km",
+      "4–<6 km",
+      "<2 km",
+      "≥6 km"
+    ]
+  },
+  "money_sums": {
+    "order_value": "502981000",
+    "delivery_fee": "100194000",
+    "discount": "15740000",
+    "commission": "118887200",
+    "rider_pay": "142483000",
+    "compensation": "9999000",
+    "revenue": "203341200",
+    "profit": "50859200"
+  },
+  "cancelled": 348,
+  "negative_profit": 1320,
+  "nulls": {
+    "travel_min": 348,
+    "delivery_min": 348,
+    "is_late": 348,
+    "rating": 348,
+    "cancel_reason": 5725
+  },
+  "relationships": [
+    {
+      "from": "Fact_Orders.order_date",
+      "to": "Dim_Date.Date"
+    },
+    {
+      "from": "Fact_Orders.customer_id",
+      "to": "Dim_Customer.customer_id"
+    },
+    {
+      "from": "Fact_Orders.zone",
+      "to": "Dim_Zone.zone"
+    },
+    {
+      "from": "Fact_Orders.time_slot",
+      "to": "Dim_TimeSlot.time_slot"
+    },
+    {
+      "from": "Fact_Orders.distance_band_normalized",
+      "to": "Dim_DistanceBand.distance_band_normalized"
+    }
+  ]
+}

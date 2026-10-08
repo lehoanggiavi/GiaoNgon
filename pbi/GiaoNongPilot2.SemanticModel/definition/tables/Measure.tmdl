@@ -1,0 +1,164 @@
+/// Home table for Pilot2 KPI measures, no relationships
+table Measure
+	lineageTag: ac1ce221-714c-4bd5-b082-fbe7774ca0e5
+
+	/// Dem so dong don trong lua chon hien tai. order_id duy nhat nen COUNTROWS la so don. Tra 0 khi khong co dong.
+	measure 'Total Orders' = COALESCE ( COUNTROWS ( Fact_Orders ), 0 )
+		formatString: 0
+		displayFolder: Orders
+		lineageTag: 75b2f6cb-3718-44b3-8b03-059747e93c3f
+
+	/// So don co co huy = 0 theo quy tac du an, giao voi filter dang chon. Tra 0 khi khong co dong.
+	measure 'Completed Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ) ), 0 )
+		formatString: 0
+		displayFolder: Orders
+		lineageTag: 1638c2a2-f686-4c49-873f-b7b49d717f43
+
+	/// So don co co huy = 1, giao voi filter dang chon. Tra 0 khi khong co dong.
+	measure 'Cancelled Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 1 ) ), 0 )
+		formatString: 0
+		displayFolder: Orders
+		lineageTag: 07a720a7-f28d-40b4-88dd-5416f747277f
+
+	/// Ty le huy = don huy / (hoan thanh + huy) trong context hien tai. BLANK khi mau so 0. Khong ngam dung tong toan bo khi co filter.
+	measure 'Cancellation Rate' = DIVIDE ( [Cancelled Orders], [Completed Orders] + [Cancelled Orders] )
+		formatString: 0.00%
+		displayFolder: Orders
+		lineageTag: 1ca969e4-a6af-487f-bc18-4163b1f055b9
+
+	/// So don du dieu kien xet tre: co huy 0 va co tre la 0 hoac 1 theo contract. Giao KEEPFILTERS voi filter dang chon. Tra 0 khi khong co dong.
+	measure 'Late Eligible Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[is_late] IN { 0, 1 } ) ), 0 )
+		formatString: 0
+		displayFolder: Service
+		lineageTag: 7d9232d6-4ee7-4db1-ad47-2184554c6ee8
+
+	/// So don du dieu kien co co tre = 1. Dua nhan nguon, chua goi la vi pham SLA.
+	measure 'Late Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[is_late] = 1 ) ), 0 )
+		formatString: 0
+		displayFolder: Service
+		lineageTag: 88f51042-234e-4ab8-8075-eaac1dc08f4b
+
+	/// Ty le tre = don tre / don du dieu kien trong context. BLANK khi mau so 0.
+	measure 'Late Rate' = DIVIDE ( [Late Orders], [Late Eligible Orders] )
+		formatString: 0.00%
+		displayFolder: Service
+		lineageTag: 29cbc64c-61bf-40e0-9422-7125e0a7ba21
+
+	/// Do phu du lieu tre = don du dieu kien / don hoan thanh. BLANK khi mau so 0.
+	measure 'Late Coverage' = DIVIDE ( [Late Eligible Orders], [Completed Orders] )
+		formatString: 0.00%
+		displayFolder: Service
+		lineageTag: 7ee497be-089a-4831-bc8d-1a27428cfc2e
+
+	/// Trung binh thoi gian chuan bi tren don huy 0, gia tri khong trong va >= 0. Don vi theo hau to _min, chua xac nhan cac buoc chong nhau. BLANK khi khong co gia tri hop le.
+	measure 'Avg Prep Minutes' = CALCULATE ( AVERAGE ( Fact_Orders[prep_min] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[prep_min] >= 0 ) )
+		formatString: 0.00
+		displayFolder: Time
+		lineageTag: 39abab8b-fe3a-4e5b-a5c3-0ad7831f2d98
+
+	/// Trung binh thoi gian cho tai xe tren don huy 0, gia tri khong trong va >= 0. BLANK khi khong co gia tri hop le.
+	measure 'Avg Rider Wait Minutes' = CALCULATE ( AVERAGE ( Fact_Orders[rider_wait_min] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[rider_wait_min] >= 0 ) )
+		formatString: 0.00
+		displayFolder: Time
+		lineageTag: e7eb462d-2a97-4fb4-8b74-519ee913024c
+
+	/// Trung binh thoi gian di chuyen tren don huy 0, gia tri khong trong va >= 0. BLANK khi khong co gia tri hop le.
+	measure 'Avg Travel Minutes' = CALCULATE ( AVERAGE ( Fact_Orders[travel_min] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[travel_min] >= 0 ) )
+		formatString: 0.00
+		displayFolder: Time
+		lineageTag: 076a5f8b-80d2-4892-91e0-5cfe6cd664e9
+
+	/// Trung binh tong thoi gian giao tren don huy 0, gia tri khong trong va >= 0. Cung population voi Median Delivery Minutes va Delivery Eligible Orders. BLANK khi khong co gia tri hop le.
+	measure 'Avg Delivery Minutes' = CALCULATE ( AVERAGE ( Fact_Orders[delivery_min] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[delivery_min] >= 0 ) )
+		formatString: 0.00
+		displayFolder: Time
+		lineageTag: 6cad4f1d-8c5f-4e37-8aaa-f73d9932fe7c
+
+	/// Trung vi tong thoi gian giao, cung population voi Avg Delivery Minutes. BLANK khi khong co gia tri hop le.
+	measure 'Median Delivery Minutes' = CALCULATE ( MEDIAN ( Fact_Orders[delivery_min] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( Fact_Orders[delivery_min] >= 0 ) )
+		formatString: 0.00
+		displayFolder: Time
+		lineageTag: 57db08b8-ee80-4878-92e8-6267e65de064
+
+	/// So don dung cho chi so thoi gian giao: huy 0, delivery_min khong trong va >= 0. Tra 0 khi khong co dong.
+	measure 'Delivery Eligible Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( NOT ISBLANK ( Fact_Orders[delivery_min] ) ), KEEPFILTERS ( Fact_Orders[delivery_min] >= 0 ) ), 0 )
+		formatString: 0
+		displayFolder: Time
+		lineageTag: d11878ed-87d8-4965-908c-5778ed092124
+
+	/// Tong gia tri don ghi nhan theo cot goc, giu ca don huy/am va filter. Don vi so goc, chua goi la doanh thu thuc thu, khong dat VND. Tra 0 khi khong co dong.
+	measure 'Recorded Order Value' = COALESCE ( SUM ( Fact_Orders[order_value] ), 0 )
+		formatString: 0
+		displayFolder: Finance
+		lineageTag: 8faa211b-6ab4-4543-a4f2-5516384ef2dc
+
+	/// Tong thu nhap ghi nhan theo cot goc. Don vi so goc, pham vi ke toan pending. Tra 0 khi khong co dong.
+	measure 'Recorded Revenue' = COALESCE ( SUM ( Fact_Orders[revenue] ), 0 )
+		formatString: 0
+		displayFolder: Finance
+		lineageTag: de04a99f-7bb8-4ebb-ace4-6bc5c055c81d
+
+	/// Tong chenh lech sau tra tai xe/boi thuong theo cot goc. Chua goi la loi nhuan ke toan day du. Tra 0 khi khong co dong.
+	measure 'Recorded Profit' = COALESCE ( SUM ( Fact_Orders[profit] ), 0 )
+		formatString: 0
+		displayFolder: Finance
+		lineageTag: 085653db-9fed-4b85-8ec3-b3dc1f2b52c6
+
+	/// Bien chenh lech = tong profit / tong revenue, co chi phi don huy trong tu. Khong trung binh margin tung don. BLANK khi mau so 0.
+	measure 'Recorded Profit Margin' = DIVIDE ( [Recorded Profit], [Recorded Revenue] )
+		formatString: 0.00%
+		displayFolder: Finance
+		lineageTag: 533a0683-ebc9-4123-9730-4a4e96c7d549
+
+	/// So don co profit < 0 trong context, giu lai khong xoa. Tra 0 khi khong co dong.
+	measure 'Loss Orders' = COALESCE ( CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( Fact_Orders[profit] < 0 ) ), 0 )
+		formatString: 0
+		displayFolder: Finance
+		lineageTag: 9179f33c-c323-41b6-afe6-a68d8e8b95b9
+
+	/// Ty le don am = don profit<0 / so don co profit khong trong trong context. BLANK khi mau so 0.
+	measure 'Loss Rate' = DIVIDE ( [Loss Orders], CALCULATE ( COUNTROWS ( Fact_Orders ), KEEPFILTERS ( NOT ISBLANK ( Fact_Orders[profit] ) ) ) )
+		formatString: 0.00%
+		displayFolder: Finance
+		lineageTag: e9a1c6a1-7662-4aaa-9a03-ee91e2a2276c
+
+	/// So khach distinct tren fact trong context, khong COUNTROWS Dim_Customer. Tra 0 khi khong co dong.
+	measure 'Active Customers' = COALESCE ( DISTINCTCOUNT ( Fact_Orders[customer_id] ), 0 )
+		formatString: 0
+		displayFolder: Customers
+		lineageTag: 09f06e6d-2271-4b6d-beb9-5981b32b650d
+
+	/// So khach co >= 2 don trong lua chon hien tai (gom don huy). Phu thuoc selection, khong cong distinct giua cac thang. Khong goi la retention/churn. Tra 0 khi khong co.
+	measure 'Repeat Customers' = COALESCE ( COUNTROWS ( FILTER ( VALUES ( Fact_Orders[customer_id] ), CALCULATE ( COUNTROWS ( Fact_Orders ) ) >= 2 ) ), 0 )
+		formatString: 0
+		displayFolder: Customers
+		lineageTag: 46190ef8-15da-4adb-94fd-132dd3d3c353
+
+	/// Ty le khach lap = khach >=2 don / khach active trong context. BLANK khi mau so 0.
+	measure 'Repeat Customer Rate' = DIVIDE ( [Repeat Customers], [Active Customers] )
+		formatString: 0.00%
+		displayFolder: Customers
+		lineageTag: 1bbce515-a689-4ba4-b919-f2d764a0056d
+
+	/// So don binh quan mot khach = tong don / khach active trong context. BLANK khi mau so 0.
+	measure 'Orders per Customer' = DIVIDE ( [Total Orders], [Active Customers] )
+		formatString: 0.00
+		displayFolder: Customers
+		lineageTag: c0f5d4c6-650f-445b-bb91-da5a3d32950a
+
+	/// Diem trung binh tren don huy 0 co rating khong trong, dung gia tri nguon. Ghi n va scale chua xac nhan doc lap. BLANK khi khong co gia tri hop le.
+	measure 'Avg Rating' = CALCULATE ( AVERAGE ( Fact_Orders[rating] ), KEEPFILTERS ( Fact_Orders[is_cancelled] = 0 ), KEEPFILTERS ( NOT ISBLANK ( Fact_Orders[rating] ) ) )
+		formatString: 0.00
+		displayFolder: Customers
+		lineageTag: 577ba604-2410-468b-b468-c5b1074ae966
+
+	column Value
+		isHidden
+		lineageTag: 6f890ee1-8139-4749-833b-a3baaca3cdf8
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition Measure = calculated
+		mode: import
+		source = {BLANK()}
+

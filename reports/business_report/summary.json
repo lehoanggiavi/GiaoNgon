@@ -1,0 +1,209 @@
+{
+  "month": {
+    "2026-03": {
+      "orders": 920,
+      "cancelled": 32,
+      "eligible": 888,
+      "late": 53,
+      "late_rate": 0.059684684684684686,
+      "cancel_rate": 0.034782608695652174
+    },
+    "2026-04": {
+      "orders": 886,
+      "cancelled": 24,
+      "eligible": 862,
+      "late": 40,
+      "late_rate": 0.04640371229698376,
+      "cancel_rate": 0.02708803611738149
+    },
+    "2026-05": {
+      "orders": 1029,
+      "cancelled": 30,
+      "eligible": 999,
+      "late": 124,
+      "late_rate": 0.12412412412412413,
+      "cancel_rate": 0.029154518950437316
+    },
+    "2026-06": {
+      "orders": 1028,
+      "cancelled": 39,
+      "eligible": 989,
+      "late": 126,
+      "late_rate": 0.12740141557128412,
+      "cancel_rate": 0.037937743190661476
+    },
+    "2026-07": {
+      "orders": 1066,
+      "cancelled": 76,
+      "eligible": 990,
+      "late": 157,
+      "late_rate": 0.15858585858585858,
+      "cancel_rate": 0.07129455909943715
+    },
+    "2026-08": {
+      "orders": 1144,
+      "cancelled": 147,
+      "eligible": 997,
+      "late": 250,
+      "late_rate": 0.25075225677031093,
+      "cancel_rate": 0.1284965034965035
+    }
+  },
+  "slot": {
+    "Chiều": {
+      "orders": 709,
+      "cancelled": 29,
+      "eligible": 680,
+      "late": 40,
+      "late_rate": 0.058823529411764705,
+      "cancel_rate": 0.04090267983074753
+    },
+    "Khuya": {
+      "orders": 496,
+      "cancelled": 12,
+      "eligible": 484,
+      "late": 24,
+      "late_rate": 0.049586776859504134,
+      "cancel_rate": 0.024193548387096774
+    },
+    "Sáng": {
+      "orders": 646,
+      "cancelled": 22,
+      "eligible": 624,
+      "late": 38,
+      "late_rate": 0.060897435897435896,
+      "cancel_rate": 0.034055727554179564
+    },
+    "Trưa": {
+      "orders": 2087,
+      "cancelled": 87,
+      "eligible": 2000,
+      "late": 257,
+      "late_rate": 0.1285,
+      "cancel_rate": 0.04168663152850982
+    },
+    "Tối": {
+      "orders": 2135,
+      "cancelled": 198,
+      "eligible": 1937,
+      "late": 391,
+      "late_rate": 0.20185854414042334,
+      "cancel_rate": 0.09274004683840749
+    }
+  },
+  "rain": {
+    "0": {
+      "orders": 3884,
+      "cancelled": 160,
+      "eligible": 3724,
+      "late": 281,
+      "late_rate": 0.07545649838882922,
+      "cancel_rate": 0.0411946446961895
+    },
+    "1": {
+      "orders": 2189,
+      "cancelled": 188,
+      "eligible": 2001,
+      "late": 469,
+      "late_rate": 0.23438280859570215,
+      "cancel_rate": 0.0858839652809502
+    }
+  },
+  "band": {
+    "2–<4 km": {
+      "orders": 3093,
+      "cancelled": 183,
+      "eligible": 2910,
+      "late": 241,
+      "late_rate": 0.08281786941580756,
+      "cancel_rate": 0.05916585838991271
+    },
+    "4–<6 km": {
+      "orders": 1217,
+      "cancelled": 73,
+      "eligible": 1144,
+      "late": 206,
+      "late_rate": 0.18006993006993008,
+      "cancel_rate": 0.0599835661462613
+    },
+    "<2 km": {
+      "orders": 1300,
+      "cancelled": 68,
+      "eligible": 1232,
+      "late": 53,
+      "late_rate": 0.04301948051948052,
+      "cancel_rate": 0.052307692307692305
+    },
+    "≥6 km": {
+      "orders": 463,
+      "cancelled": 24,
+      "eligible": 439,
+      "late": 250,
+      "late_rate": 0.5694760820045558,
+      "cancel_rate": 0.05183585313174946
+    }
+  },
+  "night_rain": {
+    "Khung khác / Không mưa": {
+      "orders": 2520,
+      "cancelled": 74,
+      "eligible": 2446,
+      "late": 114,
+      "late_rate": 0.04660670482420278,
+      "cancel_rate": 0.029365079365079365
+    },
+    "Khung khác / Mưa": {
+      "orders": 1418,
+      "cancelled": 76,
+      "eligible": 1342,
+      "late": 245,
+      "late_rate": 0.1825633383010432,
+      "cancel_rate": 0.0535966149506347
+    },
+    "Tối / Không mưa": {
+      "orders": 1364,
+      "cancelled": 86,
+      "eligible": 1278,
+      "late": 167,
+      "late_rate": 0.13067292644757433,
+      "cancel_rate": 0.06304985337243402
+    },
+    "Tối / Mưa": {
+      "orders": 771,
+      "cancelled": 112,
+      "eligible": 659,
+      "late": 224,
+      "late_rate": 0.33990895295902884,
+      "cancel_rate": 0.14526588845654995
+    }
+  },
+  "orders_growth_mar_aug": 0.24347826086956514,
+  "late_rate_change_pp": 19.106757208562623,
+  "evening_share_late": 0.5213333333333333,
+  "evening_share_cancelled": 0.5689655172413793,
+  "cancellation_reasons": {
+    "Sai địa chỉ": 32,
+    "Khách đổi ý": 73,
+    "Chờ tài xế quá lâu": 198,
+    "Nhà hàng hết món": 45
+  },
+  "cancelled_compensation": "7224000",
+  "total_compensation": "9999000",
+  "cancelled_share_compensation": 0.7224722472247225,
+  "ratings": {
+    "Trễ": {
+      "n": 750,
+      "mean": 3.86
+    },
+    "Đúng giờ": {
+      "n": 4975,
+      "mean": 4.704321608040201
+    }
+  },
+  "financial": {
+    "order_value": "502981000",
+    "revenue": "203341200",
+    "profit": "50859200"
+  },
+  "sourceSha256": "0e0f603d59b088f509cf9b5abd10f46b94e542bc11d80ddca767d64616d286c3"
+}

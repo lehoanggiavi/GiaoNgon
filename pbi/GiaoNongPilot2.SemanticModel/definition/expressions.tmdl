@@ -1,0 +1,9 @@
+expression DataFolder = "E:/Practice_DSEA/DA/OpenSrcDA/GiaoNgon/data/curated" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: ae567880-8811-4b5c-8371-22eab2a2caff
+
+	annotation PBI_ResultType = Text
+
+/// Shared typed read of TestSkill2 curated orders.csv via DataFolder parameter
+expression SharedOrders = let SourceFolder = Folder.Files(DataFolder), OrdersFile = SourceFolder{[Name = "orders.csv"]}[Content], Csv = Csv.Document(OrdersFile, [Delimiter = ",", Columns = 29, Encoding = 65001, QuoteStyle = QuoteStyle.None]), Headers = Table.PromoteHeaders(Csv, [PromoteAllScalars = true]), Typed = Table.TransformColumnTypes(Headers, {{"order_id", type text}, {"order_date", type datetime}, {"time_slot", type text}, {"customer_id", type text}, {"customer_type", type text}, {"zone", type text}, {"merchant", type text}, {"cuisine", type text}, {"distance_km", type number}, {"distance_band", type text}, {"is_rain", Int64.Type}, {"order_value", type number}, {"delivery_fee", type number}, {"discount", type number}, {"commission", type number}, {"rider_pay", type number}, {"compensation", type number}, {"revenue", type number}, {"profit", type number}, {"prep_min", type number}, {"rider_wait_min", type number}, {"travel_min", type number}, {"delivery_min", type number}, {"is_late", Int64.Type}, {"is_cancelled", Int64.Type}, {"cancel_reason", type text}, {"rating", Int64.Type}, {"distance_band_normalized", type text}, {"source_row_number", Int64.Type}}, "en-US") in Typed
+	lineageTag: 636a15ed-b95c-46a5-9f34-01ef79175f04
+

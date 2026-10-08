@@ -1,0 +1,16 @@
+/// Distinct source time_slot labels, no inferred hour boundaries
+table Dim_TimeSlot
+	lineageTag: 82ae4f00-1310-45e8-aeb0-fe2f454df776
+
+	column time_slot
+		dataType: string
+		isNullable: false
+		lineageTag: 47a9c4ac-b214-4cf0-acb7-251b5f8f3b20
+		sourceColumn: time_slot
+
+		changedProperty = SortByColumn
+
+	partition Dim_TimeSlot = m
+		mode: import
+		source = let Source = SharedOrders, Cols = Table.SelectColumns(Source, {"time_slot"}), Distinct = Table.Distinct(Cols), Typed = Table.TransformColumnTypes(Distinct, {{"time_slot", type text}}, "en-US") in Typed
+

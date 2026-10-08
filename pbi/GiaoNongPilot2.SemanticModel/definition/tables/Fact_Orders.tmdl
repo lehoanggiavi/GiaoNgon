@@ -1,0 +1,244 @@
+/// One row per order_id from TestSkill2 curated orders.csv
+table Fact_Orders
+	lineageTag: 26213a28-6632-47fe-be62-caf5e00bd13e
+
+	column order_id
+		dataType: string
+		isNullable: false
+		lineageTag: af3b612a-3019-4229-ae2f-e0fb3f6f882e
+		sourceColumn: order_id
+
+	column order_date
+		dataType: dateTime
+		isNullable: false
+		lineageTag: 70c39bc1-7544-42ee-9d55-f38c69605a34
+		sourceColumn: order_date
+
+	column time_slot
+		dataType: string
+		isNullable: false
+		lineageTag: e51cd237-82ec-41de-a497-fe824421bf60
+		sourceColumn: time_slot
+
+	column customer_id
+		dataType: string
+		isNullable: false
+		lineageTag: cb3313f4-3bfa-485a-9f76-beff0dd413b5
+		sourceColumn: customer_id
+
+	column customer_type
+		dataType: string
+		isNullable: false
+		lineageTag: 1a8bcf7b-1f1d-423c-a6f6-0655a682b65e
+		sourceColumn: customer_type
+
+	column zone
+		dataType: string
+		isNullable: false
+		lineageTag: e83777a2-d76b-49c3-951e-f19a150c641f
+		sourceColumn: zone
+
+	column merchant
+		dataType: string
+		isNullable: false
+		lineageTag: 6a36e897-60b2-4568-bcb8-f5c353e0f990
+		sourceColumn: merchant
+
+	column cuisine
+		dataType: string
+		isNullable: false
+		lineageTag: 11cec2c5-f3e2-4826-be24-28c9c5d5e9ee
+		sourceColumn: cuisine
+
+	column distance_km
+		dataType: double
+		isNullable: false
+		lineageTag: 306528ef-d45e-4857-b26d-4cdc1c96f4e1
+		summarizeBy: sum
+		sourceColumn: distance_km
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column distance_band
+		dataType: string
+		isNullable: false
+		lineageTag: 2c09414e-a2b0-4716-a93d-1f46b1202eef
+		sourceColumn: distance_band
+
+	column is_rain
+		dataType: int64
+		isNullable: false
+		lineageTag: 37c6810a-9fe5-4c35-8275-2046af633142
+		sourceColumn: is_rain
+
+	column order_value
+		dataType: double
+		isNullable: false
+		lineageTag: 798a44fa-7f4e-4ea2-84a2-6d8af8b14119
+		summarizeBy: sum
+		sourceColumn: order_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column delivery_fee
+		dataType: double
+		isNullable: false
+		lineageTag: 0627185c-25c2-40f8-9edb-3f31d93b168d
+		summarizeBy: sum
+		sourceColumn: delivery_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount
+		dataType: double
+		isNullable: false
+		lineageTag: 6c4ac114-3978-4bd6-ba8c-96e5eef34080
+		summarizeBy: sum
+		sourceColumn: discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column commission
+		dataType: double
+		isNullable: false
+		lineageTag: 0b3af20a-a4d8-4ea4-8c13-e29e2fe9c5dd
+		summarizeBy: sum
+		sourceColumn: commission
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rider_pay
+		dataType: double
+		isNullable: false
+		lineageTag: 6fd31c38-dd86-43d7-9736-b1e40d3ad1c6
+		summarizeBy: sum
+		sourceColumn: rider_pay
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column compensation
+		dataType: double
+		isNullable: false
+		lineageTag: b7b5b7d5-f860-4ab2-b483-c17bde0da50d
+		summarizeBy: sum
+		sourceColumn: compensation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue
+		dataType: double
+		isNullable: false
+		lineageTag: 2abeb600-adbc-4194-92f4-c2432be89ebb
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column profit
+		dataType: double
+		isNullable: false
+		lineageTag: 128565b5-3b07-4d54-b5ae-c3a29f6c0d0c
+		summarizeBy: sum
+		sourceColumn: profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column prep_min
+		dataType: double
+		isNullable: false
+		lineageTag: 130df670-6117-487c-ad0d-3dcdbec101ae
+		summarizeBy: sum
+		sourceColumn: prep_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rider_wait_min
+		dataType: double
+		isNullable: false
+		lineageTag: 15e0b300-1c5c-4a3a-9a47-a2a06de8ca6d
+		summarizeBy: sum
+		sourceColumn: rider_wait_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column travel_min
+		dataType: double
+		lineageTag: d6ac83f1-ceee-4b6d-a3de-0376579e3f2f
+		summarizeBy: sum
+		sourceColumn: travel_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column delivery_min
+		dataType: double
+		lineageTag: a99d2dcb-072a-4f64-a5b2-7f6a9538f2d5
+		summarizeBy: sum
+		sourceColumn: delivery_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_late
+		dataType: int64
+		lineageTag: 6ac40f38-8983-4ed0-aebb-e5962ee2bd41
+		sourceColumn: is_late
+
+	column is_cancelled
+		dataType: int64
+		isNullable: false
+		lineageTag: 32c8a92d-04dc-4586-a270-156d2375ddb9
+		sourceColumn: is_cancelled
+
+	column cancel_reason
+		dataType: string
+		lineageTag: f5f30171-097d-43f2-bd02-62c9180ec337
+		sourceColumn: cancel_reason
+
+	column rating
+		dataType: int64
+		lineageTag: 0717e619-6327-41f8-b27f-55d7a1879170
+		sourceColumn: rating
+
+	column distance_band_normalized
+		dataType: string
+		isNullable: false
+		lineageTag: 5f6401c5-8180-4b77-94fd-455ad6350af7
+		sourceColumn: distance_band_normalized
+
+	column source_row_number
+		dataType: int64
+		isHidden
+		isNullable: false
+		lineageTag: 878c85ff-15d8-4019-9288-b8df3c59f61a
+		summarizeBy: none
+		sourceColumn: source_row_number
+
+	partition Fact_Orders = m
+		mode: import
+		source = let Source = SharedOrders in Source
+

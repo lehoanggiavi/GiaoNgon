@@ -1,0 +1,41 @@
+/// Continuous calendar over source years from curated orders
+table Dim_Date
+	lineageTag: 9200390a-ff0a-4c76-9e3e-481e39d66098
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isUnique
+		isNullable: false
+		lineageTag: 763f5cf5-798c-4b00-9fb0-43dfdd44ca5c
+		sourceColumn: Date
+
+	column Year
+		dataType: int64
+		isNullable: false
+		lineageTag: a74075d8-8b91-4e2a-bd52-a392b63979b4
+		sourceColumn: Year
+
+	column MonthNumber
+		dataType: int64
+		isNullable: false
+		lineageTag: 243aee42-a4e4-4f4d-8568-80de30fec6ea
+		sourceColumn: MonthNumber
+
+	column Month
+		dataType: string
+		isNullable: false
+		lineageTag: 973b495f-c918-4e6a-bbe3-71280c56d3dd
+		sourceColumn: Month
+		sortByColumn: MonthNumber
+
+	column YearMonth
+		dataType: string
+		isNullable: false
+		lineageTag: 4809f56d-f93c-410a-b74a-1b83f35dd75b
+		sourceColumn: YearMonth
+
+	partition Dim_Date = m
+		mode: import
+		source = let MinDate = List.Min(SharedOrders[order_date]), MaxDate = List.Max(SharedOrders[order_date]), StartDate = #date(Date.Year(MinDate), 1, 1), EndDate = #date(Date.Year(MaxDate), 12, 31), DayCount = Duration.Days(EndDate - StartDate) + 1, Dates = List.Dates(StartDate, DayCount, #duration(1, 0, 0, 0)), CalTable = Table.FromList(Dates, Splitter.SplitByNothing(), {"Date"}), Typed = Table.TransformColumnTypes(CalTable, {{"Date", type datetime}}, "en-US"), AddYear = Table.AddColumn(Typed, "Year", each Date.Year([Date]), Int64.Type), AddMonthNumber = Table.AddColumn(AddYear, "MonthNumber", each Date.Month([Date]), Int64.Type), AddMonth = Table.AddColumn(AddMonthNumber, "Month", each Date.MonthName([Date]), type text), AddYearMonth = Table.AddColumn(AddMonth, "YearMonth", each Text.From([Year]) & "-" & Text.PadStart(Text.From([MonthNumber]), 2, "0"), type text) in AddYearMonth
+

@@ -1,0 +1,14 @@
+/// Distinct source zone labels
+table Dim_Zone
+	lineageTag: 3761116f-f04e-4a16-9f62-e1d6fea551bc
+
+	column zone
+		dataType: string
+		isNullable: false
+		lineageTag: 43a50a5a-c9bf-482e-b457-4cbfac7de326
+		sourceColumn: zone
+
+	partition Dim_Zone = m
+		mode: import
+		source = let Source = SharedOrders, Cols = Table.SelectColumns(Source, {"zone"}), Distinct = Table.Distinct(Cols), Typed = Table.TransformColumnTypes(Distinct, {{"zone", type text}}, "en-US") in Typed
+

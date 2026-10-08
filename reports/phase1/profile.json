@@ -1,0 +1,1401 @@
+{
+  "source": "E:\\AgenticDAFlow\\TestWorkFlow\\data\\giaongon_orders_2026.csv",
+  "sha256": "4c967c8bcbecebe44ff542bb4f3722630ab62e1cfa93264e1984ae998680fe4c",
+  "summary": {
+    "rows": 6073,
+    "columns": 27,
+    "completed_by_project_rule": 5725,
+    "cancelled": 348,
+    "unknown_status": 0,
+    "cancel_denominator": 6073,
+    "late_numerator": 750,
+    "late_denominator": 5725,
+    "distinct_customers": 2098,
+    "customers_missing_rows": 0,
+    "duplicates": 0,
+    "duplicate_keys_different_content": 0,
+    "negative_profit_orders": 1320,
+    "merchant_multiple_cuisine_n": 0,
+    "cancel_pct": 5.7302815741808,
+    "late_pct": 13.100436681222707
+  },
+  "period": {
+    "min": "2026-03-01",
+    "max": "2026-08-31",
+    "valid_n": 6073,
+    "distinct_days": 184,
+    "missing_days_within_observed_span": []
+  },
+  "columns": [
+    {
+      "column": "order_id",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 6073,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": null
+    },
+    {
+      "column": "order_date",
+      "type": "datetime64[ns]",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 184,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": "2026-03-01",
+      "max": "2026-08-31",
+      "labels": null
+    },
+    {
+      "column": "time_slot",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 5,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "Tối": 2135,
+        "Trưa": 2087,
+        "Chiều": 709,
+        "Sáng": 646,
+        "Khuya": 496
+      }
+    },
+    {
+      "column": "customer_id",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 2098,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": null
+    },
+    {
+      "column": "customer_type",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 2,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "Quay lại": 5522,
+        "Mới": 551
+      }
+    },
+    {
+      "column": "zone",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 8,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "Quận 1": 963,
+        "Bình Thạnh": 940,
+        "Quận 3": 791,
+        "Quận 7": 725,
+        "Tân Bình": 709,
+        "Thủ Đức": 666,
+        "Gò Vấp": 657,
+        "Phú Nhuận": 622
+      }
+    },
+    {
+      "column": "merchant",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 32,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "Cơm Tấm Sườn Nướng Bà Tư": 644,
+        "Trà Sữa Mây Chiều": 595,
+        "Gà Rán Phố Nhỏ": 476,
+        "Phở Bắc 1990": 437,
+        "Pizza Lò Củi Nhà Làm": 364,
+        "Cơm Gà Xối Mỡ Hai Lúa": 333,
+        "Bún Bò Cô Ba Huế": 275,
+        "Bánh Tráng Trộn Chú Tèo": 273,
+        "Cà Phê Muối Góc Phố": 247,
+        "Salad Xanh Mỗi Ngày": 243,
+        "Burger Khói Than": 188,
+        "Xôi Gà Bà Chín": 167,
+        "Cơm Văn Phòng Bếp Mẹ": 165,
+        "Hủ Tiếu Nam Vang Út Lan": 157,
+        "Trà Trái Cây Tươi Mát": 149,
+        "Mì Ý Sốt Kem Bistro": 144,
+        "Cơm Chay An Lạc": 123,
+        "Bún Chả Hà Thành": 120,
+        "Poke Bowl Biển Xanh": 114,
+        "Gà Ủ Muối Hoa Tiêu": 110,
+        "Cơm Niêu Đất Việt": 93,
+        "Ốc Luộc Sả Chị Hai": 91,
+        "Trà Sữa Nướng Hạt Dẻ": 75,
+        "Phở Cuốn Ngũ Xã": 69,
+        "Bánh Mì Chảo Sáng Sớm": 69,
+        "Sinh Tố Nhà Vườn": 66,
+        "Cà Phê Sữa Đá Sài Gòn": 52,
+        "Bún Riêu Cua Đồng": 51,
+        "Cánh Gà Chiên Nước Mắm": 51,
+        "Bò Né Ba Ngon": 49,
+        "Chè Bưởi Cô Sáu": 42,
+        "Pizza Phô Mai Kéo Sợi": 41
+      }
+    },
+    {
+      "column": "cuisine",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 7,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "Cơm": 1407,
+        "Trà sữa & Cà phê": 1118,
+        "Bún & Phở": 1109,
+        "Gà rán & Burger": 825,
+        "Đồ ăn vặt": 642,
+        "Pizza & Mì Ý": 549,
+        "Healthy & Salad": 423
+      }
+    },
+    {
+      "column": "distance_km",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 109,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.6,
+      "max": 12.0,
+      "labels": null
+    },
+    {
+      "column": "distance_band",
+      "type": "string",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 4,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "2–4 km": 3093,
+        "<2 km": 1300,
+        "4–6 km": 1217,
+        ">6 km": 463
+      }
+    },
+    {
+      "column": "is_rain",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 2,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "labels": {
+        "0": 3884,
+        "1": 2189
+      }
+    },
+    {
+      "column": "order_value",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 306,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 20000.0,
+      "max": 500000.0,
+      "labels": null
+    },
+    {
+      "column": "delivery_fee",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 12,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 25000.0,
+      "labels": null
+    },
+    {
+      "column": "discount",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 3,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 20000.0,
+      "labels": null
+    },
+    {
+      "column": "commission",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 304,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 125000.0,
+      "labels": null
+    },
+    {
+      "column": "rider_pay",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 52,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 64000.0,
+      "labels": null
+    },
+    {
+      "column": "compensation",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 69,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 152000.0,
+      "labels": null
+    },
+    {
+      "column": "revenue",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 383,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 141000.0,
+      "labels": null
+    },
+    {
+      "column": "profit",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 464,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": -152000.0,
+      "max": 117000.0,
+      "labels": null
+    },
+    {
+      "column": "prep_min",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 213,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 3.0,
+      "max": 26.0,
+      "labels": null
+    },
+    {
+      "column": "rider_wait_min",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 383,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 141.1,
+      "labels": null
+    },
+    {
+      "column": "travel_min",
+      "type": "float64",
+      "null": 348,
+      "non_null": 5725,
+      "distinct": 302,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 4.0,
+      "max": 48.2,
+      "labels": null
+    },
+    {
+      "column": "delivery_min",
+      "type": "float64",
+      "null": 348,
+      "non_null": 5725,
+      "distinct": 491,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 9.1,
+      "max": 94.7,
+      "labels": null
+    },
+    {
+      "column": "is_late",
+      "type": "float64",
+      "null": 348,
+      "non_null": 5725,
+      "distinct": 2,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "labels": {
+        "0": 4975,
+        "1": 750,
+        "<missing>": 348
+      }
+    },
+    {
+      "column": "is_cancelled",
+      "type": "float64",
+      "null": 0,
+      "non_null": 6073,
+      "distinct": 2,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "labels": {
+        "0": 5725,
+        "1": 348
+      }
+    },
+    {
+      "column": "cancel_reason",
+      "type": "string",
+      "null": 5725,
+      "non_null": 348,
+      "distinct": 4,
+      "parse_failures": 0,
+      "nonfinite": null,
+      "min": null,
+      "max": null,
+      "labels": {
+        "<missing>": 5725,
+        "Chờ tài xế quá lâu": 198,
+        "Khách đổi ý": 73,
+        "Nhà hàng hết món": 45,
+        "Sai địa chỉ": 32
+      }
+    },
+    {
+      "column": "rating",
+      "type": "float64",
+      "null": 348,
+      "non_null": 5725,
+      "distinct": 4,
+      "parse_failures": 0,
+      "nonfinite": 0,
+      "min": 2.0,
+      "max": 5.0,
+      "labels": {
+        "5": 3641,
+        "4": 1865,
+        "<missing>": 348,
+        "3": 196,
+        "2": 23
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check": "order_id: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_date: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_date: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "time_slot: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "customer_id: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "customer_type: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "zone: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "merchant: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "cuisine: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "distance_km: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "distance_km: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "distance_km: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "distance_band: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_rain: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_rain: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_rain: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_value: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_value: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_value: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_fee: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_fee: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_fee: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "discount: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "discount: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "discount: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "commission: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "commission: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "commission: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_pay: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_pay: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_pay: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "compensation: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "compensation: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "compensation: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "revenue: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "revenue: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "revenue: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "profit: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "profit: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "profit: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "prep_min: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "prep_min: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "prep_min: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_wait_min: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_wait_min: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rider_wait_min: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "travel_min: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "travel_min: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "travel_min: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_min: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_min: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "delivery_min: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_late: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_late: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_late: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_cancelled: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_cancelled: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_cancelled: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "cancel_reason: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rating: null + non_null",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rating: parse failures",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "rating: nonfinite",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "header columns",
+      "expected": 27,
+      "actual": 27,
+      "status": "PASS",
+      "basis": "PLAN observed header contract"
+    },
+    {
+      "check": "duplicate full rows",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_id: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "order_id: format",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis"
+    },
+    {
+      "check": "customer_id: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "customer_id: format",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis"
+    },
+    {
+      "check": "duplicate nonmissing order_id",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "duplicate order_id with different content",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_cancelled: non-binary nonmissing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "project binary flag hypothesis"
+    },
+    {
+      "check": "is_late: non-binary nonmissing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "project binary flag hypothesis"
+    },
+    {
+      "check": "is_rain: non-binary nonmissing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "project binary flag hypothesis"
+    },
+    {
+      "check": "status reconciliation",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "cancelled travel_min: present",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "completed travel_min: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "cancelled delivery_min: present",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "completed delivery_min: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "cancelled is_late: present",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "completed is_late: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "cancelled rating: present",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "completed rating: missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "CLAUDE delivered-only project rule"
+    },
+    {
+      "check": "cancelled reason missing",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis"
+    },
+    {
+      "check": "completed reason present",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis"
+    },
+    {
+      "check": "cancelled revenue nonzero",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project rule; scope not accounting approval"
+    },
+    {
+      "check": "distance_km: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "prep_min: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "rider_wait_min: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "travel_min: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "delivery_min: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "order_value: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "delivery_fee: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "discount: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "commission: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "rider_pay: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "compensation: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "revenue: negative",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "plausibility hypothesis; profit may be negative"
+    },
+    {
+      "check": "rating outside [1,5]",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis"
+    },
+    {
+      "check": "revenue = commission + delivery_fee - discount",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis at explicit tolerance"
+    },
+    {
+      "check": "profit = revenue - rider_pay - compensation",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis at explicit tolerance"
+    },
+    {
+      "check": "delivery_min = prep_min + rider_wait_min + travel_min",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project hypothesis at explicit tolerance"
+    },
+    {
+      "check": "time cells exceed 0.1 precision",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "observed rounding basis"
+    },
+    {
+      "check": "money cells noninteger",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "observed money precision basis"
+    },
+    {
+      "check": "distance label 2–4 km: membership",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project half-open convention; source label alone does not confirm endpoints"
+    },
+    {
+      "check": "distance label 4–6 km: membership",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "legacy project half-open convention; source label alone does not confirm endpoints"
+    },
+    {
+      "check": "distance label <2 km: membership",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "basis": "source label literal less than"
+    },
+    {
+      "check": "distance label >6 km: membership",
+      "expected": 0,
+      "actual": 32,
+      "status": "FAIL",
+      "basis": "source label literal greater than; legacy script uses >= at last boundary"
+    },
+    {
+      "check": "month_observed: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "zone: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "time_slot: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "is_rain: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "distance_band: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    },
+    {
+      "check": "customer_type: rows reconcile",
+      "expected": 6073,
+      "actual": 6073,
+      "status": "PASS",
+      "basis": "structural"
+    }
+  ],
+  "cohort_missing": [
+    {
+      "cohort": "completed",
+      "n": 5725,
+      "prep_min_missing": 0,
+      "rider_wait_min_missing": 0,
+      "travel_min_missing": 0,
+      "delivery_min_missing": 0,
+      "is_late_missing": 0,
+      "rating_missing": 0,
+      "cancel_reason_missing": 5725
+    },
+    {
+      "cohort": "cancelled",
+      "n": 348,
+      "prep_min_missing": 0,
+      "rider_wait_min_missing": 0,
+      "travel_min_missing": 348,
+      "delivery_min_missing": 348,
+      "is_late_missing": 348,
+      "rating_missing": 348,
+      "cancel_reason_missing": 0
+    },
+    {
+      "cohort": "unknown",
+      "n": 0,
+      "prep_min_missing": 0,
+      "rider_wait_min_missing": 0,
+      "travel_min_missing": 0,
+      "delivery_min_missing": 0,
+      "is_late_missing": 0,
+      "rating_missing": 0,
+      "cancel_reason_missing": 0
+    }
+  ],
+  "residuals": [
+    {
+      "formula": "revenue = commission + delivery_fee - discount",
+      "basis": "legacy project hypothesis",
+      "n": 6073,
+      "denominator": 6073,
+      "missing": 0,
+      "tolerance": 1e-08,
+      "reason": "All source money cells are integer-valued; tolerance only absorbs float arithmetic.",
+      "violations": 0,
+      "max_abs": 0.0,
+      "mean_residual": 0.0
+    },
+    {
+      "formula": "profit = revenue - rider_pay - compensation",
+      "basis": "legacy project hypothesis",
+      "n": 6073,
+      "denominator": 6073,
+      "missing": 0,
+      "tolerance": 1e-08,
+      "reason": "All source money cells are integer-valued; no rounding of monetary mismatch.",
+      "violations": 0,
+      "max_abs": 0.0,
+      "mean_residual": 0.0
+    },
+    {
+      "formula": "delivery_min = prep_min + rider_wait_min + travel_min",
+      "basis": "legacy project hypothesis",
+      "n": 5725,
+      "denominator": 6073,
+      "missing": 348,
+      "tolerance": 0.200000001,
+      "reason": "Source time precision 0.1; rounding four terms can accumulate up to 4 x 0.05 = 0.2 minutes; not an SLA.",
+      "violations": 0,
+      "max_abs": 0.10000000000000853,
+      "mean_residual": -0.0008034934497816277
+    }
+  ],
+  "time_precision_violations": {
+    "prep_min": 0,
+    "rider_wait_min": 0,
+    "travel_min": 0,
+    "delivery_min": 0
+  },
+  "distance_labels_observed": [
+    {
+      "distance_band": "2–4 km",
+      "size": 3093,
+      "min": 2.0,
+      "max": 3.9
+    },
+    {
+      "distance_band": "4–6 km",
+      "size": 1217,
+      "min": 4.0,
+      "max": 5.9
+    },
+    {
+      "distance_band": "<2 km",
+      "size": 1300,
+      "min": 0.6,
+      "max": 1.9
+    },
+    {
+      "distance_band": ">6 km",
+      "size": 463,
+      "min": 6.0,
+      "max": 12.0
+    }
+  ],
+  "distance_boundary_counts": [
+    {
+      "distance_km": 2.0,
+      "distance_band": "2–4 km",
+      "n": 181
+    },
+    {
+      "distance_km": 4.0,
+      "distance_band": "4–6 km",
+      "n": 98
+    },
+    {
+      "distance_km": 6.0,
+      "distance_band": ">6 km",
+      "n": 32
+    }
+  ],
+  "distance_band_checks": [
+    {
+      "label": "2–4 km",
+      "n": 3093,
+      "mismatches": 0,
+      "status": "PASS",
+      "interpretation": "legacy project half-open convention; source label alone does not confirm endpoints"
+    },
+    {
+      "label": "4–6 km",
+      "n": 1217,
+      "mismatches": 0,
+      "status": "PASS",
+      "interpretation": "legacy project half-open convention; source label alone does not confirm endpoints"
+    },
+    {
+      "label": "<2 km",
+      "n": 1300,
+      "mismatches": 0,
+      "status": "PASS",
+      "interpretation": "source label literal less than"
+    },
+    {
+      "label": ">6 km",
+      "n": 463,
+      "mismatches": 32,
+      "status": "FAIL",
+      "interpretation": "source label literal greater than; legacy script uses >= at last boundary"
+    }
+  ],
+  "semantics": {
+    "metadata": "Header names only; no independent source data dictionary or unit declaration found.",
+    "observed": "Counts, date span, labels, numeric precision and residuals freshly measured from source.",
+    "project_rule": "CLAUDE: operational columns missing for cancelled; operations on completed. Legacy 02: completed := is_cancelled=0.",
+    "hypothesis": "Legacy 01 formulas/ID patterns/rating range are checks against project conventions, not industry evidence.",
+    "pending": [
+      "Currency and scaling",
+      "GMV includes cancelled order_value?",
+      "Revenue/profit recognized accounting scope, refunds/taxes/overhead",
+      "Late SLA and label generation",
+      "Time step overlap and unit confirmation",
+      "Distance endpoints and slot boundaries",
+      "customer_type definition and history outside observed span"
+    ]
+  }
+}

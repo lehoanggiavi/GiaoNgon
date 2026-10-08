@@ -1,0 +1,14 @@
+/// Distinct approved normalized distance bands
+table Dim_DistanceBand
+	lineageTag: 66789161-3d1c-4482-8c9f-163d06c07b5b
+
+	column distance_band_normalized
+		dataType: string
+		isNullable: false
+		lineageTag: e2c4d1d0-c9cd-42bf-9d0b-9823585c3302
+		sourceColumn: distance_band_normalized
+
+	partition Dim_DistanceBand = m
+		mode: import
+		source = let Source = SharedOrders, Cols = Table.SelectColumns(Source, {"distance_band_normalized"}), Distinct = Table.Distinct(Cols), Typed = Table.TransformColumnTypes(Distinct, {{"distance_band_normalized", type text}}, "en-US") in Typed
+

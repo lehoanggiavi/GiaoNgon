@@ -1,0 +1,14 @@
+/// One row per customer_id, stable key only
+table Dim_Customer
+	lineageTag: d6353d2f-c449-4da6-a887-58319f5694a4
+
+	column customer_id
+		dataType: string
+		isNullable: false
+		lineageTag: 78bbadc9-9717-4c31-b13f-d4b767a4a8a0
+		sourceColumn: customer_id
+
+	partition Dim_Customer = m
+		mode: import
+		source = let Source = SharedOrders, Cols = Table.SelectColumns(Source, {"customer_id"}), Distinct = Table.Distinct(Cols), Typed = Table.TransformColumnTypes(Distinct, {{"customer_id", type text}}, "en-US") in Typed
+

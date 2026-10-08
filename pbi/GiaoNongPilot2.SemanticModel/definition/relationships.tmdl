@@ -1,0 +1,20 @@
+relationship Fact_Orders_order_date_Dim_Date_Date
+	fromColumn: Fact_Orders.order_date
+	toColumn: Dim_Date.Date
+
+relationship Fact_Orders_customer_id_Dim_Customer_customer_id
+	fromColumn: Fact_Orders.customer_id
+	toColumn: Dim_Customer.customer_id
+
+relationship Fact_Orders_zone_Dim_Zone_zone
+	fromColumn: Fact_Orders.zone
+	toColumn: Dim_Zone.zone
+
+relationship Fact_Orders_time_slot_Dim_TimeSlot_time_slot
+	fromColumn: Fact_Orders.time_slot
+	toColumn: Dim_TimeSlot.time_slot
+
+relationship Fact_Orders_band_Dim_DistanceBand_band
+	fromColumn: Fact_Orders.distance_band_normalized
+	toColumn: Dim_DistanceBand.distance_band_normalized
+

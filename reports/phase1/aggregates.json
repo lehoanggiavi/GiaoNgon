@@ -1,0 +1,1592 @@
+{
+  "groups": {
+    "month_observed": [
+      {
+        "group": "2026-03",
+        "orders": 920,
+        "cancel_n": 32,
+        "cancel_denominator": 920,
+        "cancel_pct": 3.4782608695652173,
+        "late_n": 53,
+        "late_denominator": 888,
+        "late_pct": 5.968468468468469,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 888,
+        "delivery_mean": 27.443355855855852,
+        "delivery_median": 26.7
+      },
+      {
+        "group": "2026-04",
+        "orders": 886,
+        "cancel_n": 24,
+        "cancel_denominator": 886,
+        "cancel_pct": 2.708803611738149,
+        "late_n": 40,
+        "late_denominator": 862,
+        "late_pct": 4.640371229698376,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 862,
+        "delivery_mean": 27.50023201856148,
+        "delivery_median": 27.0
+      },
+      {
+        "group": "2026-05",
+        "orders": 1029,
+        "cancel_n": 30,
+        "cancel_denominator": 1029,
+        "cancel_pct": 2.9154518950437316,
+        "late_n": 124,
+        "late_denominator": 999,
+        "late_pct": 12.412412412412413,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 999,
+        "delivery_mean": 30.12942942942943,
+        "delivery_median": 28.7
+      },
+      {
+        "group": "2026-06",
+        "orders": 1028,
+        "cancel_n": 39,
+        "cancel_denominator": 1028,
+        "cancel_pct": 3.7937743190661477,
+        "late_n": 126,
+        "late_denominator": 989,
+        "late_pct": 12.740141557128412,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 989,
+        "delivery_mean": 30.273306370070774,
+        "delivery_median": 29.2
+      },
+      {
+        "group": "2026-07",
+        "orders": 1066,
+        "cancel_n": 76,
+        "cancel_denominator": 1066,
+        "cancel_pct": 7.129455909943715,
+        "late_n": 157,
+        "late_denominator": 990,
+        "late_pct": 15.858585858585858,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 990,
+        "delivery_mean": 30.911313131313133,
+        "delivery_median": 29.3
+      },
+      {
+        "group": "2026-08",
+        "orders": 1144,
+        "cancel_n": 147,
+        "cancel_denominator": 1144,
+        "cancel_pct": 12.84965034965035,
+        "late_n": 250,
+        "late_denominator": 997,
+        "late_pct": 25.075225677031092,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 997,
+        "delivery_mean": 34.39789368104313,
+        "delivery_median": 32.4
+      }
+    ],
+    "zone": [
+      {
+        "group": "Bình Thạnh",
+        "orders": 940,
+        "cancel_n": 55,
+        "cancel_denominator": 940,
+        "cancel_pct": 5.851063829787234,
+        "late_n": 108,
+        "late_denominator": 885,
+        "late_pct": 12.203389830508476,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 885,
+        "delivery_mean": 30.172994350282487,
+        "delivery_median": 28.6
+      },
+      {
+        "group": "Gò Vấp",
+        "orders": 657,
+        "cancel_n": 42,
+        "cancel_denominator": 657,
+        "cancel_pct": 6.392694063926941,
+        "late_n": 91,
+        "late_denominator": 615,
+        "late_pct": 14.796747967479677,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 615,
+        "delivery_mean": 30.556422764227644,
+        "delivery_median": 29.0
+      },
+      {
+        "group": "Phú Nhuận",
+        "orders": 622,
+        "cancel_n": 37,
+        "cancel_denominator": 622,
+        "cancel_pct": 5.948553054662379,
+        "late_n": 82,
+        "late_denominator": 585,
+        "late_pct": 14.017094017094017,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 585,
+        "delivery_mean": 30.607350427350426,
+        "delivery_median": 29.6
+      },
+      {
+        "group": "Quận 1",
+        "orders": 963,
+        "cancel_n": 63,
+        "cancel_denominator": 963,
+        "cancel_pct": 6.542056074766355,
+        "late_n": 114,
+        "late_denominator": 900,
+        "late_pct": 12.666666666666668,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 900,
+        "delivery_mean": 30.065444444444445,
+        "delivery_median": 28.45
+      },
+      {
+        "group": "Quận 3",
+        "orders": 791,
+        "cancel_n": 50,
+        "cancel_denominator": 791,
+        "cancel_pct": 6.321112515802781,
+        "late_n": 92,
+        "late_denominator": 741,
+        "late_pct": 12.415654520917679,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 741,
+        "delivery_mean": 30.292982456140354,
+        "delivery_median": 28.6
+      },
+      {
+        "group": "Quận 7",
+        "orders": 725,
+        "cancel_n": 46,
+        "cancel_denominator": 725,
+        "cancel_pct": 6.344827586206897,
+        "late_n": 87,
+        "late_denominator": 679,
+        "late_pct": 12.812960235640647,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 679,
+        "delivery_mean": 29.699410898379973,
+        "delivery_median": 28.3
+      },
+      {
+        "group": "Thủ Đức",
+        "orders": 666,
+        "cancel_n": 27,
+        "cancel_denominator": 666,
+        "cancel_pct": 4.054054054054054,
+        "late_n": 86,
+        "late_denominator": 639,
+        "late_pct": 13.458528951486699,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 639,
+        "delivery_mean": 29.970109546165887,
+        "delivery_median": 28.6
+      },
+      {
+        "group": "Tân Bình",
+        "orders": 709,
+        "cancel_n": 28,
+        "cancel_denominator": 709,
+        "cancel_pct": 3.9492242595204514,
+        "late_n": 90,
+        "late_denominator": 681,
+        "late_pct": 13.215859030837004,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 681,
+        "delivery_mean": 30.525697503671072,
+        "delivery_median": 29.3
+      }
+    ],
+    "time_slot": [
+      {
+        "group": "Chiều",
+        "orders": 709,
+        "cancel_n": 29,
+        "cancel_denominator": 709,
+        "cancel_pct": 4.090267983074753,
+        "late_n": 40,
+        "late_denominator": 680,
+        "late_pct": 5.88235294117647,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 680,
+        "delivery_mean": 26.53779411764706,
+        "delivery_median": 25.4
+      },
+      {
+        "group": "Khuya",
+        "orders": 496,
+        "cancel_n": 12,
+        "cancel_denominator": 496,
+        "cancel_pct": 2.4193548387096775,
+        "late_n": 24,
+        "late_denominator": 484,
+        "late_pct": 4.958677685950414,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 484,
+        "delivery_mean": 26.595247933884295,
+        "delivery_median": 25.5
+      },
+      {
+        "group": "Sáng",
+        "orders": 646,
+        "cancel_n": 22,
+        "cancel_denominator": 646,
+        "cancel_pct": 3.4055727554179565,
+        "late_n": 38,
+        "late_denominator": 624,
+        "late_pct": 6.089743589743589,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 624,
+        "delivery_mean": 26.88958333333333,
+        "delivery_median": 25.6
+      },
+      {
+        "group": "Trưa",
+        "orders": 2087,
+        "cancel_n": 87,
+        "cancel_denominator": 2087,
+        "cancel_pct": 4.168663152850982,
+        "late_n": 257,
+        "late_denominator": 2000,
+        "late_pct": 12.85,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 2000,
+        "delivery_mean": 30.959100000000003,
+        "delivery_median": 29.9
+      },
+      {
+        "group": "Tối",
+        "orders": 2135,
+        "cancel_n": 198,
+        "cancel_denominator": 2135,
+        "cancel_pct": 9.274004683840749,
+        "late_n": 391,
+        "late_denominator": 1937,
+        "late_pct": 20.185854414042335,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 1937,
+        "delivery_mean": 32.7291171915333,
+        "delivery_median": 31.2
+      }
+    ],
+    "is_rain": [
+      {
+        "group": "0.0",
+        "orders": 3884,
+        "cancel_n": 160,
+        "cancel_denominator": 3884,
+        "cancel_pct": 4.11946446961895,
+        "late_n": 281,
+        "late_denominator": 3724,
+        "late_pct": 7.545649838882921,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 3724,
+        "delivery_mean": 28.053276047261008,
+        "delivery_median": 27.1
+      },
+      {
+        "group": "1.0",
+        "orders": 2189,
+        "cancel_n": 188,
+        "cancel_denominator": 2189,
+        "cancel_pct": 8.588396528095021,
+        "late_n": 469,
+        "late_denominator": 2001,
+        "late_pct": 23.438280859570217,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 2001,
+        "delivery_mean": 34.25337331334333,
+        "delivery_median": 33.0
+      }
+    ],
+    "distance_band": [
+      {
+        "group": "2–4 km",
+        "orders": 3093,
+        "cancel_n": 183,
+        "cancel_denominator": 3093,
+        "cancel_pct": 5.916585838991271,
+        "late_n": 241,
+        "late_denominator": 2910,
+        "late_pct": 8.281786941580755,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 2910,
+        "delivery_mean": 28.973298969072165,
+        "delivery_median": 27.7
+      },
+      {
+        "group": "4–6 km",
+        "orders": 1217,
+        "cancel_n": 73,
+        "cancel_denominator": 1217,
+        "cancel_pct": 5.99835661462613,
+        "late_n": 206,
+        "late_denominator": 1144,
+        "late_pct": 18.006993006993007,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 1144,
+        "delivery_mean": 34.15979020979021,
+        "delivery_median": 33.0
+      },
+      {
+        "group": "<2 km",
+        "orders": 1300,
+        "cancel_n": 68,
+        "cancel_denominator": 1300,
+        "cancel_pct": 5.230769230769231,
+        "late_n": 53,
+        "late_denominator": 1232,
+        "late_pct": 4.301948051948052,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 1232,
+        "delivery_mean": 25.118344155844156,
+        "delivery_median": 23.9
+      },
+      {
+        "group": ">6 km",
+        "orders": 463,
+        "cancel_n": 24,
+        "cancel_denominator": 463,
+        "cancel_pct": 5.183585313174946,
+        "late_n": 250,
+        "late_denominator": 439,
+        "late_pct": 56.947608200455576,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 439,
+        "delivery_mean": 42.53872437357631,
+        "delivery_median": 41.3
+      }
+    ],
+    "customer_type": [
+      {
+        "group": "Mới",
+        "orders": 551,
+        "cancel_n": 31,
+        "cancel_denominator": 551,
+        "cancel_pct": 5.626134301270417,
+        "late_n": 74,
+        "late_denominator": 520,
+        "late_pct": 14.23076923076923,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 520,
+        "delivery_mean": 30.548269230769233,
+        "delivery_median": 28.6
+      },
+      {
+        "group": "Quay lại",
+        "orders": 5522,
+        "cancel_n": 317,
+        "cancel_denominator": 5522,
+        "cancel_pct": 5.740673668960522,
+        "late_n": 676,
+        "late_denominator": 5205,
+        "late_pct": 12.987512007684918,
+        "late_coverage_of_completed_pct": 100.0,
+        "delivery_n": 5205,
+        "delivery_mean": 30.187569644572523,
+        "delivery_median": 28.8
+      }
+    ]
+  },
+  "timing_completed": [
+    {
+      "metric": "prep_min",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 65643.5,
+      "mean": 11.466113537117904,
+      "median": 11.1
+    },
+    {
+      "metric": "rider_wait_min",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 35308.7,
+      "mean": 6.167458515283842,
+      "median": 4.6
+    },
+    {
+      "metric": "travel_min",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 72063.8,
+      "mean": 12.587563318777294,
+      "median": 11.6
+    },
+    {
+      "metric": "delivery_min",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 173011.40000000002,
+      "mean": 30.22033187772926,
+      "median": 28.8
+    }
+  ],
+  "financial_by_cohort": [
+    {
+      "cohort": "completed",
+      "metric": "order_value",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 475555000.0,
+      "mean": 83066.37554585152,
+      "median": 65000.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "delivery_fee",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 100194000.0,
+      "mean": 17501.13537117904,
+      "median": 15000.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "discount",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 15740000.0,
+      "mean": 2749.3449781659388,
+      "median": 0.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "commission",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 118887200.0,
+      "mean": 20766.323144104805,
+      "median": 16200.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "rider_pay",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 142483000.0,
+      "mean": 24887.860262008733,
+      "median": 23000.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "compensation",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 2775000.0,
+      "mean": 484.71615720524017,
+      "median": 0.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "revenue",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 203341200.0,
+      "mean": 35518.113537117904,
+      "median": 32800.0
+    },
+    {
+      "cohort": "completed",
+      "metric": "profit",
+      "n": 5725,
+      "denominator": 5725,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 58083200.0,
+      "mean": 10145.53711790393,
+      "median": 8000.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "order_value",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 27426000.0,
+      "mean": 78810.3448275862,
+      "median": 61000.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "delivery_fee",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "discount",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "commission",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "rider_pay",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "compensation",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 7224000.0,
+      "mean": 20758.620689655174,
+      "median": 18000.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "revenue",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    {
+      "cohort": "cancelled",
+      "metric": "profit",
+      "n": 348,
+      "denominator": 348,
+      "missing": 0,
+      "coverage_pct": 100.0,
+      "sum": -7224000.0,
+      "mean": -20758.620689655174,
+      "median": -18000.0
+    },
+    {
+      "cohort": "unknown",
+      "metric": "order_value",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "delivery_fee",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "discount",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "commission",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "rider_pay",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "compensation",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "revenue",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    },
+    {
+      "cohort": "unknown",
+      "metric": "profit",
+      "n": 0,
+      "denominator": 0,
+      "missing": 0,
+      "coverage_pct": null,
+      "sum": null,
+      "mean": null,
+      "median": null
+    }
+  ],
+  "customer_summary": {
+    "customers": 2098,
+    "with_2plus_orders": 1261,
+    "repeat_customer_pct": 60.10486177311726,
+    "orders_per_customer_mean": 2.8946615824594852,
+    "orders_per_customer_median": 2.0,
+    "order_rows_covered": 6073,
+    "denominator_rows": 6073,
+    "label_conflicting_customers": 252
+  },
+  "customer_frequency": [
+    {
+      "orders_in_observed_period": 1,
+      "customers": 837
+    },
+    {
+      "orders_in_observed_period": 2,
+      "customers": 538
+    },
+    {
+      "orders_in_observed_period": 3,
+      "customers": 312
+    },
+    {
+      "orders_in_observed_period": 4,
+      "customers": 166
+    },
+    {
+      "orders_in_observed_period": 5,
+      "customers": 74
+    },
+    {
+      "orders_in_observed_period": 6,
+      "customers": 52
+    },
+    {
+      "orders_in_observed_period": 7,
+      "customers": 24
+    },
+    {
+      "orders_in_observed_period": 8,
+      "customers": 20
+    },
+    {
+      "orders_in_observed_period": 9,
+      "customers": 12
+    },
+    {
+      "orders_in_observed_period": 10,
+      "customers": 10
+    },
+    {
+      "orders_in_observed_period": 11,
+      "customers": 7
+    },
+    {
+      "orders_in_observed_period": 12,
+      "customers": 5
+    },
+    {
+      "orders_in_observed_period": 13,
+      "customers": 5
+    },
+    {
+      "orders_in_observed_period": 14,
+      "customers": 3
+    },
+    {
+      "orders_in_observed_period": 15,
+      "customers": 4
+    },
+    {
+      "orders_in_observed_period": 16,
+      "customers": 3
+    },
+    {
+      "orders_in_observed_period": 17,
+      "customers": 3
+    },
+    {
+      "orders_in_observed_period": 18,
+      "customers": 2
+    },
+    {
+      "orders_in_observed_period": 19,
+      "customers": 3
+    },
+    {
+      "orders_in_observed_period": 20,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 21,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 24,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 27,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 29,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 31,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 34,
+      "customers": 2
+    },
+    {
+      "orders_in_observed_period": 35,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 36,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 37,
+      "customers": 2
+    },
+    {
+      "orders_in_observed_period": 39,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 44,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 45,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 49,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 52,
+      "customers": 1
+    },
+    {
+      "orders_in_observed_period": 252,
+      "customers": 1
+    }
+  ],
+  "daily": [
+    {
+      "order_date": "2026-03-01",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-03-02",
+      "orders": 17
+    },
+    {
+      "order_date": "2026-03-03",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-03-04",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-03-05",
+      "orders": 20
+    },
+    {
+      "order_date": "2026-03-06",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-03-07",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-03-08",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-03-09",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-03-10",
+      "orders": 21
+    },
+    {
+      "order_date": "2026-03-11",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-03-12",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-03-13",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-03-14",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-03-15",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-03-16",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-03-17",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-03-18",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-03-19",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-03-20",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-03-21",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-03-22",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-03-23",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-03-24",
+      "orders": 22
+    },
+    {
+      "order_date": "2026-03-25",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-03-26",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-03-27",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-03-28",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-03-29",
+      "orders": 41
+    },
+    {
+      "order_date": "2026-03-30",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-03-31",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-04-01",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-04-02",
+      "orders": 20
+    },
+    {
+      "order_date": "2026-04-03",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-04-04",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-04-05",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-04-06",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-04-07",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-04-08",
+      "orders": 20
+    },
+    {
+      "order_date": "2026-04-09",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-04-10",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-04-11",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-04-12",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-04-13",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-04-14",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-04-15",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-04-16",
+      "orders": 23
+    },
+    {
+      "order_date": "2026-04-17",
+      "orders": 42
+    },
+    {
+      "order_date": "2026-04-18",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-04-19",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-04-20",
+      "orders": 16
+    },
+    {
+      "order_date": "2026-04-21",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-04-22",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-04-23",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-04-24",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-04-25",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-04-26",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-04-27",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-04-28",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-04-29",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-04-30",
+      "orders": 20
+    },
+    {
+      "order_date": "2026-05-01",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-05-02",
+      "orders": 24
+    },
+    {
+      "order_date": "2026-05-03",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-05-04",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-05-05",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-05-06",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-05-07",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-05-08",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-05-09",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-05-10",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-05-11",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-05-12",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-05-13",
+      "orders": 24
+    },
+    {
+      "order_date": "2026-05-14",
+      "orders": 24
+    },
+    {
+      "order_date": "2026-05-15",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-05-16",
+      "orders": 41
+    },
+    {
+      "order_date": "2026-05-17",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-05-18",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-05-19",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-05-20",
+      "orders": 46
+    },
+    {
+      "order_date": "2026-05-21",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-05-22",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-05-23",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-05-24",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-05-25",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-05-26",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-05-27",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-05-28",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-05-29",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-05-30",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-05-31",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-06-01",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-06-02",
+      "orders": 21
+    },
+    {
+      "order_date": "2026-06-03",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-06-04",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-06-05",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-06-06",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-06-07",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-06-08",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-06-09",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-06-10",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-06-11",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-06-12",
+      "orders": 46
+    },
+    {
+      "order_date": "2026-06-13",
+      "orders": 50
+    },
+    {
+      "order_date": "2026-06-14",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-06-15",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-06-16",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-06-17",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-06-18",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-06-19",
+      "orders": 50
+    },
+    {
+      "order_date": "2026-06-20",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-06-21",
+      "orders": 45
+    },
+    {
+      "order_date": "2026-06-22",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-06-23",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-06-24",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-06-25",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-06-26",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-06-27",
+      "orders": 39
+    },
+    {
+      "order_date": "2026-06-28",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-06-29",
+      "orders": 23
+    },
+    {
+      "order_date": "2026-06-30",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-07-01",
+      "orders": 29
+    },
+    {
+      "order_date": "2026-07-02",
+      "orders": 24
+    },
+    {
+      "order_date": "2026-07-03",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-07-04",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-07-05",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-07-06",
+      "orders": 39
+    },
+    {
+      "order_date": "2026-07-07",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-07-08",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-07-09",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-07-10",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-07-11",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-07-12",
+      "orders": 45
+    },
+    {
+      "order_date": "2026-07-13",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-07-14",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-07-15",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-07-16",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-07-17",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-07-18",
+      "orders": 41
+    },
+    {
+      "order_date": "2026-07-19",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-07-20",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-07-21",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-07-22",
+      "orders": 33
+    },
+    {
+      "order_date": "2026-07-23",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-07-24",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-07-25",
+      "orders": 42
+    },
+    {
+      "order_date": "2026-07-26",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-07-27",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-07-28",
+      "orders": 26
+    },
+    {
+      "order_date": "2026-07-29",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-07-30",
+      "orders": 27
+    },
+    {
+      "order_date": "2026-07-31",
+      "orders": 37
+    },
+    {
+      "order_date": "2026-08-01",
+      "orders": 48
+    },
+    {
+      "order_date": "2026-08-02",
+      "orders": 45
+    },
+    {
+      "order_date": "2026-08-03",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-08-04",
+      "orders": 39
+    },
+    {
+      "order_date": "2026-08-05",
+      "orders": 25
+    },
+    {
+      "order_date": "2026-08-06",
+      "orders": 32
+    },
+    {
+      "order_date": "2026-08-07",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-08-08",
+      "orders": 28
+    },
+    {
+      "order_date": "2026-08-09",
+      "orders": 43
+    },
+    {
+      "order_date": "2026-08-10",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-08-11",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-08-12",
+      "orders": 23
+    },
+    {
+      "order_date": "2026-08-13",
+      "orders": 47
+    },
+    {
+      "order_date": "2026-08-14",
+      "orders": 38
+    },
+    {
+      "order_date": "2026-08-15",
+      "orders": 34
+    },
+    {
+      "order_date": "2026-08-16",
+      "orders": 42
+    },
+    {
+      "order_date": "2026-08-17",
+      "orders": 40
+    },
+    {
+      "order_date": "2026-08-18",
+      "orders": 24
+    },
+    {
+      "order_date": "2026-08-19",
+      "orders": 31
+    },
+    {
+      "order_date": "2026-08-20",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-08-21",
+      "orders": 50
+    },
+    {
+      "order_date": "2026-08-22",
+      "orders": 42
+    },
+    {
+      "order_date": "2026-08-23",
+      "orders": 39
+    },
+    {
+      "order_date": "2026-08-24",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-08-25",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-08-26",
+      "orders": 30
+    },
+    {
+      "order_date": "2026-08-27",
+      "orders": 35
+    },
+    {
+      "order_date": "2026-08-28",
+      "orders": 41
+    },
+    {
+      "order_date": "2026-08-29",
+      "orders": 36
+    },
+    {
+      "order_date": "2026-08-30",
+      "orders": 47
+    },
+    {
+      "order_date": "2026-08-31",
+      "orders": 28
+    }
+  ]
+}

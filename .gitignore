@@ -1,0 +1,18 @@
+# Local workflow history, backups and machine state
+/Log/
+/Plan/
+/docs/DAFlowAuto/
+/AGENTS.md
+/CLAUDE.md
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.aux
+*.log
+*.out
+*.synctex.gz
